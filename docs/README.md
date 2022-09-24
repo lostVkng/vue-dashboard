@@ -37,22 +37,19 @@ This endpoint expects a json object to return an array of board names and the ur
 ```
 
 **/board/:slug**
-This endpoint returns a json object with the board name/slug and an array of board tiles, each with a unique id and the corresponding chart id to query chart data & format.
+This endpoint returns a json object with the board name/slug and an array of board tiles, the chart id is used to query chart data & format.
 ```json
 {
     "name": "Sample Name",
     "slug": "sample-name",
     "tiles": [
         {
-            "id": "1",
             "chartId": "text1"
         },
         {
-            "id": "2",
             "chartId": "c2"
         },
         {
-            "id": "3",
             "chartId": "c2"
         }
     ]
@@ -65,6 +62,7 @@ Text tile example:
 ```json
 {
     "type": "text",
+    "id": "ex-id",
     "text": "Sample Text"
 }
 ```
@@ -73,6 +71,7 @@ Text tile example:
 ```json
 {
     "type": "eChart",
+    "id": "ex-id",
     "eChart": {Apache eCharts Option}
 }
 ```

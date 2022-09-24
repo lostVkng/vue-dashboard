@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import Hamburger from './components/Hamburger.vue';
 import Sidebar from './views/SidebarView.vue';
 import { ApiCalls } from './ApiCalls';

@@ -1,13 +1,9 @@
-import { createApp} from 'vue';
+import {createApp} from 'vue';
 
 import App from './App.vue';
 import router from './router';
 
-// import bootstrap files
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
-
-// Vue-Dash - specific CSS
+// Vue-Dashboard - main CSS
 import './assets/main.css';
 
 

@@ -14,9 +14,9 @@ ApiCalls.getBoards = async () => {
 
 // fetch tiles for board
 // board structure, not tile datasets
-ApiCalls.getBoardData = async (id) => {
+ApiCalls.getBoardData = async (slug) => {
 
-    let res = await fetch('/api/board/'+id);
+    let res = await fetch('/api/board/'+slug);
     let json = await res.json()
 
     return json

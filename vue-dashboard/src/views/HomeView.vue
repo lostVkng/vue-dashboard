@@ -19,6 +19,6 @@
 
 	.default-text {
 		font-size: 6vw;
-		color: var(--theme-text-bg);
+		color: var(--theme-text);
 	}
 </style>

@@ -1,13 +1,12 @@
 <script setup>
 import * as echarts from 'echarts';
-import { v4 as uuidv4 } from 'uuid';
 </script>
 
 
 
 <template>
     <div class="chart-wrapper">
-        <div :id="`chart-${uid}`" class="chart"></div>
+        <div :id="`chart-${chartData.id}`" class="chart"></div>
     </div>
 </template>
 
@@ -16,14 +15,9 @@ import { v4 as uuidv4 } from 'uuid';
 		props: {
             'chartData': Object
 		},
-		data: function() {
-			return {
-				uid: uuidv4()
-			}
-		},
 		mounted: async function() {
 
-			let id = 'chart-' + this.uid
+			let id = 'chart-' + this.chartData.id
 			var myChart = echarts.init(document.getElementById(id));
 			// Draw the chart
 			myChart.setOption(this.chartData.eChart);
